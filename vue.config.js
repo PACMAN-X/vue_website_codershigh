@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: "<codershigh.vuejs>"
+  publicPath: "/dist/"
 };
