@@ -1,8 +1,8 @@
 <template>
   <div style="background-color: #f5f5f5">
     <b-container>
-      <p align="center" style="color:#949494">student Products</p>
       <h3 align="center">수강생들의 작품들</h3>
+      <p align="center" style="color:#949494">Student Products</p>
       <AppStoreCard></AppStoreCard>
     </b-container>
   </div>

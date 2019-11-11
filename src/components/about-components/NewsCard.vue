@@ -23,7 +23,7 @@
         >
           <img :src="article.imgURL" alt />
           <b-card-body>
-            <b-card-text>{{ article.description }}</b-card-text>
+            <b-card-text v-html="article.description"></b-card-text>
             <b-button v-show="article.url" :href="article.url"
               >더 알아보기</b-button
             >
@@ -50,8 +50,9 @@ export default {
           imgURL: require("@/assets/images/newsImages/news1.png"),
           title: "우리는 왜 소프트웨어를 배울까?",
           source: "2017.05.24 동아사이언스",
-          description:
-            "코더스하이 SeongKwan Yoon 대표가 운영하는 교실에 대한 기사입니다. 현재 서울대학교에서 진행하고 있는 [앱 프로토타이핑] 과정에 대한 소개가 있습니다.",
+          description: "코더스하이 SeongKwan Yoon 대표가 운영하는 교실에 대한 기사입니다. \n 현재 서울대학교에서 진행하고 있는 [앱 프로토타이핑] 과정에 대한 소개가 있습니다."
+            .split("\n")
+            .join("<br />"),
           url: "http://dongascience.donga.com/news/view/18272"
         },
         {

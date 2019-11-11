@@ -1,9 +1,9 @@
 <template>
   <div style="background-color: #00b3fe">
     <b-container>
-      <b-row>
+      <b-row align-v="end">
         <b-col cols="12" md="6">
-          <h4 class="top">코더스하이 소개</h4>
+          <h4 class="top" style="margin-left: 0px">코더스하이 소개</h4>
           <h1 class="medium">
             <span style="color: #ffeb8c">코더스하이</span>는
             <br />
@@ -47,14 +47,13 @@
               variant="warning"
               size="sm"
               :href="logoFile"
-              style="
-    margin-right: 10px;
-"
+              style="margin-right: 10px;"
             >
-              <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>다운로드
+              <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+              다운로드
             </b-button>
             <b-button variant="warning" size="sm" :href="logoBrandGuide">
-              <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>브랜드
+              <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> 브랜드
               가이드
             </b-button>
           </b-row>
@@ -69,14 +68,13 @@
               variant="warning"
               size="sm"
               :href="simpleLogoFile"
-              style="
-    margin-right: 10px;
-"
+              style="margin-right: 10px;"
             >
-              <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>다운로드
+              <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+              다운로드
             </b-button>
             <b-button variant="warning" size="sm" :href="simpleLogoBrandGuide">
-              <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>브랜드
+              <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> 브랜드
               가이드
             </b-button>
           </b-row>
@@ -124,7 +122,7 @@ h4.top {
   margin-bottom: 20px;
 }
 p.longtime {
-  font-size: 13px;
+  font-size: 15px;
   font-family: "applesdgothicneo-light";
   line-height: 1.4;
   color: white;

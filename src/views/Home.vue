@@ -4,7 +4,7 @@
     <CardNews></CardNews>
     <CurriculumBlock></CurriculumBlock>
     <div class="container">
-      <div class="row">
+      <div class="row mb-4">
         <div class="col-12 col-sm-6">
           <StudentCarouselBlock></StudentCarouselBlock>
         </div>

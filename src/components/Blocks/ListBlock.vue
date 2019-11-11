@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h3 style="font-size: 36px;">{{ blogName }}</h3>
-    <div class="hline"></div>
+    <h3 style="font-size: 36px; margin-bottom: 0px;">{{ blogName }}</h3>
+    <div class="hline mb-3"></div>
     <div v-if="blogName == '교육결과물'">
       <ReportList
         v-for="article in articles[blogName]"

@@ -11,7 +11,7 @@
             목표입니다.
           </p>
         </b-col>
-        <b-col>
+        <b-col align="center">
           <h4>소셜 네트워크</h4>
           <div class="hline-w"></div>
           <a :href="codershighFacebook">

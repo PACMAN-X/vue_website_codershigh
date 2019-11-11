@@ -55,7 +55,7 @@ export default {
           name: "김광호",
           nickName: "활어광어",
           career1: "Apple & TED & NG Educator",
-          career2: "미래교실네트워크 거꾸로캠퍼스 교사"
+          career2: "미래교실네트워크 / 거꾸로캠퍼스 교사"
         },
         {
           id: 5,

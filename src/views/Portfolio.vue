@@ -5,8 +5,8 @@
       <b-container>
         <b-row>
           <b-col class="center-block">
-            <p align="center" style="color:#949494">student Products</p>
             <h3 align="center">수강생들의 작품들</h3>
+            <p align="center" style="color:#949494">Student Products</p>
             <AppStoreCard></AppStoreCard>
             <div align="center">
               <router-link :to="{ name: 'appStoreShow' }">

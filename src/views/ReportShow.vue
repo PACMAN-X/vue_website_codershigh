@@ -97,7 +97,7 @@
             align="center"
             v-show="currentOutcome.classContents.curriculum.time1 !== ''"
           >
-            <h5>Track 0</h5>
+            <h5>Track 0 수강생</h5>
             <div class="circleBase-none">
               <h3>
                 {{ currentOutcome.classContents.studentsCompletion.track0 }}명
@@ -108,7 +108,7 @@
             align="center"
             v-show="currentOutcome.classContents.curriculum.time2 !== ''"
           >
-            <h5>Track 1</h5>
+            <h5>Track 1 수강생</h5>
             <div class="circleBase-none">
               <h3>
                 {{ currentOutcome.classContents.studentsCompletion.track1 }}명
@@ -119,7 +119,7 @@
             align="center"
             v-show="currentOutcome.classContents.curriculum.time3 !== ''"
           >
-            <h5>Track 2</h5>
+            <h5>Track 2 수강생</h5>
             <div class="circleBase">
               <h3>
                 {{
@@ -136,7 +136,7 @@
             </div>
           </b-col>
           <b-col align="center">
-            <h5>수료</h5>
+            <h5>최종 수료</h5>
             <div class="circleBase">
               <h3>
                 {{
@@ -149,7 +149,7 @@
                 {{
                   currentOutcome.classContents.studentsCompletion.completion
                     .presentation
-                }}명
+                }}팀
               </h3>
             </div>
             <!-- <h5>수료</h5>
