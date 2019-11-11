@@ -1,5 +1,5 @@
 <template>
-  <div class="footerBackground">
+  <div id="footerBottom" class="footerBackground">
     <footer class="page-footer">
       <b-row>
         <b-col>

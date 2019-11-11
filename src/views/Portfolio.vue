@@ -11,7 +11,7 @@
             <div align="center">
               <router-link :to="{ name: 'appStoreShow' }">
                 <b-button style="background-color: #384452;color:white;"
-                  >결과물 더보기</b-button
+                  >결과물 더 보기</b-button
                 >
               </router-link>
             </div>

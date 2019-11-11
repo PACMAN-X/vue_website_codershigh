@@ -144,8 +144,19 @@
                     .number
                 }}명
               </h3>
-              <div class="hline"></div>
-              <h3>
+              <div
+                v-show="
+                  currentOutcome.classContents.studentsCompletion.completion
+                    .presentation != ''
+                "
+                class="hline"
+              ></div>
+              <h3
+                v-show="
+                  currentOutcome.classContents.studentsCompletion.completion
+                    .presentation != ''
+                "
+              >
                 {{
                   currentOutcome.classContents.studentsCompletion.completion
                     .presentation
@@ -178,6 +189,12 @@
           <h2 align="center">교육결과</h2>
         </b-col>
       </b-row>
+      <Redesign
+        v-show="
+          currentOutcome.classContents.targetStudents ===
+            '연세대학교 UIC IID 학과'
+        "
+      ></Redesign>
       <div v-for="outcome in currentOutcome.studentsOutcome" :key="outcome.id">
         <ReportCard :outcome="outcome"></ReportCard>
       </div>
@@ -187,10 +204,12 @@
 
 <script>
 import ReportCard from "@/components/report_components/ReportCard.vue";
+import Redesign from "@/components/report_components/Redesign.vue";
 
 export default {
   components: {
-    ReportCard
+    ReportCard,
+    Redesign
   },
   props: ["title"],
   data() {
@@ -273,6 +292,115 @@ export default {
               students: "신준형, 최현목",
               youTubeAddress: "https://www.youtube.com/embed/R-lnhy6mFRo",
               website: "https://projectintheclass.github.io/HanRiverFlex/"
+            }
+          ]
+        }
+      },
+      {
+        curriculumName: "2019 1학기 연세대학교 UIC IID 학과",
+        data: {
+          classContents: {
+            image: require("@/assets/images/report-client/ysu.png"),
+            classTitle: "2019 iOS 프로토타이핑 과정",
+            targetStudents: "연세대학교 UIC IID 학과",
+            duration: "기간 : 2019년 3월 6일 ~ 2019년 6월 12일",
+            time: "시간 : 10:00~14:00 총 60시간",
+            numberOfStudents: "인원 : 9명 (수료율 100%)",
+            lecturers: "강사 : 윤성관",
+            curriculum: {
+              time1: "",
+              time2: 60 + "시간",
+              time3: ""
+            },
+            studentsCompletion: {
+              enrollment: 9,
+              track0: 0,
+              track1: 9,
+              track2: { students: 14, teams: 5 },
+              completion: { number: 9, presentation: "" }
+            }
+          },
+          studentsOutcome: [
+            {
+              appScreen: require("@/assets/images/report-appscreen/ysu_19_01/04.png"),
+              appTitle: "Survey",
+              appComment:
+                "This app is a platform for surveys; users can get more respondents, easily create & answer the surveys, and are ensured reward for answering the surveys.",
+              students: "Da In Kim",
+              youTubeAddress: "https://www.youtube.com/embed/Y343qCDZ89g",
+              website: "https://projectintheclass.github.io/Survey/"
+            },
+            {
+              appScreen: require("@/assets/images/report-appscreen/ysu_19_01/07.png"),
+              appTitle: "MyInterview",
+              appComment:
+                "MyInterview is an application for job applicants who have to practice for job interviews; it asks popular interview questions to its users so that users can do unlimited mock interviews. The differentiator is that it is a voice-activated app that interacts with the user using basic artificial intelligence to give a more realistic mock interview experience.",
+              students: "Chiwon Lee",
+              youTubeAddress: "https://www.youtube.com/embed/bEweBERctjo",
+              website: "https://projectintheclass.github.io/MyInterview/"
+            },
+            {
+              appScreen: require("@/assets/images/report-appscreen/ysu_19_01/02.png"),
+              appTitle: "Memoment",
+              appComment:
+                "Memoment is an application for users who want to\nwrite reviews of movie, performance, and exhibition.",
+              students: "Philian Choi",
+              youTubeAddress: "https://www.youtube.com/embed/7hX4slvBx5g",
+              website: "https://projectintheclass.github.io/Memoment/"
+            },
+            {
+              appScreen: require("@/assets/images/report-appscreen/ysu_19_01/05.png"),
+              appTitle: "Semester Diary",
+              appComment:
+                "Semester Diary allows students to manage assignments by each deadline. The user can keep track on the progress of each assignment by organizing everyday schedule..",
+              students: "Hyun Jung Oh",
+              youTubeAddress: "https://www.youtube.com/embed/ClxnmpitjHE",
+              website: "https://projectintheclass.github.io/SemesterDiary/"
+            },
+            {
+              appScreen: require("@/assets/images/report-appscreen/ysu_19_01/09.png"),
+              appTitle: "QuotesPlease",
+              appComment:
+                "Quotesplease is an application that provides daily commuters with a chance to freshen up their minds with quotes from books, movies, lyrics, and poems.",
+              students: "Jaeyoon Lee",
+              youTubeAddress: "https://www.youtube.com/embed/EggWov6Mq2Y",
+              website: "https://projectintheclass.github.io/QuotesPlease/"
+            },
+            {
+              appScreen: require("@/assets/images/report-appscreen/ysu_19_01/06.png"),
+              appTitle: "Cheat Diet",
+              appComment:
+                "A diet app for sweet toothed’s cheat days. \nInforms users of desert calories and a workout that complies with cheat day: hours of sleep required to burn it off.\n\n",
+              students: "Jooyeon Shon",
+              youTubeAddress: "https://www.youtube.com/embed/6XPIrYaUaW4",
+              website: "https://projectintheclass.github.io/ultimatesleepdiet/"
+            },
+            {
+              appScreen: require("@/assets/images/report-appscreen/ysu_19_01/01.png"),
+              appTitle: "TwoGo",
+              appComment:
+                "TwoGo is a delivery application for users who want to share the cost of a meal without having to pay extra to reach the minimum price",
+              students: "Seungpil Hyun",
+              youTubeAddress: "https://www.youtube.com/embed/JINAGZS3ToM",
+              website: "https://projectintheclass.github.io/TwoGo/"
+            },
+            {
+              appScreen: require("@/assets/images/report-appscreen/ysu_19_01/03.png"),
+              appTitle: "Coffee Book",
+              appComment:
+                "An App to collect Recipe & write recipe, and look friend's favorite coffee\n\n",
+              students: "Soohyun Yoon",
+              youTubeAddress: "https://www.youtube.com/embed/7jIHV12mELQ",
+              website: "https://projectintheclass.github.io/CoffeeBook/"
+            },
+            {
+              appScreen: require("@/assets/images/report-appscreen/ysu_19_01/08.png"),
+              appTitle: "OutFit Weather",
+              appComment:
+                "An app mainly focus on weather forecast that can help people easily make decision about their daily outfits depending on the weather conditions.",
+              students: "selinazzzan",
+              youTubeAddress: "https://www.youtube.com/embed/39k2pu_qFkA",
+              website: "https://projectintheclass.github.io/Outfit-Weather/"
             }
           ]
         }

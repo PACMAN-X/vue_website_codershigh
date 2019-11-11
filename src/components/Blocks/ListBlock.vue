@@ -141,7 +141,7 @@ export default {
           },
           {
             id: 18,
-            title: "2018 여름방학 고려대 iOS 특강",
+            title: "2018 여름방학 고려대학교 iOS 특강",
             url: ""
           },
           {
